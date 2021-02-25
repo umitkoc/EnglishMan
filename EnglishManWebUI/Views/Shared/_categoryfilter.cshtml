@@ -1,0 +1,82 @@
+  <section class="category-filter section-padding">
+
+            <div class="container">
+                <div class="center-content">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <h2 class="section-title">Check Out The New Releases</h2>
+                            <span class="underline center"></span>
+                            <p class="lead">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-buttons">
+                    <div class="filter btn" data-filter="all">All Releases</div>
+                    <div class="filter btn disabled" data-filter=".video">Video</div>
+                    <div class="filter btn disabled" data-filter=".audio">Audio</div>
+                    <div class="filter btn" data-filter=".books">Books</div>
+                </div>
+            </div>
+
+
+
+
+            <div id="category-filter">
+                <ul class="category-list">
+                    <li class="category-item books">
+                        <figure>
+                            <img src="~/images/category-filter/home-v1/category-filter-img-05.jpg" alt="New Releaase" />
+                            <figcaption class="bg-orange">
+                                <div class="info-block">
+                                    <h4>Rastgele Kelime Öğren</h4>
+                                    <span class="author"><strong>Hazırlayan:</strong> Ümit KOÇ</span>
+                                    <div class="rating">
+                                        <span>☆</span>
+                                        <span>☆</span>
+                                        <span>☆</span>
+                                        <span>☆</span>
+                                        <span>☆</span>
+                                    </div>
+                                    <p>
+                                         Yabancı dilinizi geliştirmek için sizlere özel kelimeler oluşturdum. Umarım beğenirsiniz ☻
+                                    </p>
+                                    <a asp-controller="book" asp-action="word">Başla <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="category-item books">
+                        <figure>
+                            <img src="~/images/category-filter/home-v1/category-filter-img-04.jpg"/>
+                            <figcaption class="bg-orange">
+                                <div class="info-block">
+                                    <h4>Rastgele Paragraf Öğren</h4>
+                                    <span class="author"><strong>Hazırlayan:</strong>
+                                    Ümit KOÇ
+                                    </span>
+                                    <div class="rating">
+                                        <span>☆</span>
+                                        <span>☆</span>
+                                        <span>☆</span>
+                                        <span>☆</span>
+                                        <span>☆</span>
+                                    </div>
+                                    <p>
+                                       Yabancı dilinizi geliştirmek için sizlere özel paragraf oluşturdum. Umarım beğenirsiniz ☻
+                                    </p>
+                                    <a asp-controller="book" asp-action="paragraph">
+                                        Başla <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    
+                </ul>
+                @* <div class="center-content">
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div> *@
+                <div class="clearfix"></div>
+            </div>
+        </section>

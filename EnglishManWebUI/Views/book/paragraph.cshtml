@@ -1,0 +1,38 @@
+@{
+    Layout="_randomlayout";
+}
+@model Paragraph
+	<div class="position-fixed bg-warning bottom-0 end-0 p-3" style="z-index: 1">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body text-center"></div>
+        </div>
+    </div>
+		<div class="card">
+			<div class="container">
+				<div class="alert alert-dark text-center">
+					<div class="row justify-content-between">
+						<div class="col-3">
+							<a asp-controller="book" asp-action="paragraph" id="next">
+								<i class="fas fa-random"></i>
+							</a>
+						</div>
+						<div class="col-3">
+							<a asp-controller="home" asp-action="index">
+								<i class="fas fa-home"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="card-header bg-light">
+					<p id="text">
+						@foreach(var i in Model.text){
+							<span>@i</span>
+						}
+					</p>
+				</div>
+			</div>
+		</div>
+	<script src="~/js/main2.js">
+	</script>

@@ -1,0 +1,53 @@
+ <header id="header-v1" class="navbar-wrapper">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-default">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="navbar-header">
+                                    <div class="navbar-brand">
+                                            <a asp-controller="home" asp-action="index">
+                                                <img src="~/images/icon-ebooks.png" />
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="navbar-collapse hidden-sm hidden-xs">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a asp-controller="home" asp-action="index">Anasayfa</a>
+                                        </li>
+                                        <li class="disabled"><a href="services.html">Blog</a></li>
+
+                                        <li class="disabled"><a href="services.html">Kitaplar</a></li>
+
+                                        <li class="disabled"><a href="services.html">Hizmetlerimiz</a></li>
+
+                                        <li ><a href="#contact">İletişim</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-menu hidden-lg hidden-md">
+                            <a href="#mobile-menu"><i class="fa fa-navicon"></i></a>
+                            <div id="mobile-menu">
+                                <ul>
+                                    <li>
+                                        <a asp-controller="home" asp-action="index">Anasayfa</a>
+                                    </li>
+                                    <li class="disabled">
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="disabled">
+                                          <a href="blog.html">Kitaplar</a>
+                                    </li>
+                                    <li class="disabled"><a href="services.html">Hizmetlerimiz</a></li>
+                                    <li><a href="#contact">İletişim</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
